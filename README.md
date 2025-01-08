@@ -1,103 +1,75 @@
 Todo List Application
 
-A full-stack Todo List application with a Node.js backend and React.js frontend. This project allows users to add, view, and manage their tasks in a simple and user-friendly interface.
+A simple and user-friendly Todo List application built using React for the front-end and Node.js for the back-end. This app allows users to manage tasks, add new tasks, and view a list of their to-do items.
+
 
 Features
-	•	Add new tasks: Users can add tasks to the Todo list.
-	•	View tasks: Display tasks in a list format.
-	•	Manage tasks: Optionally, you can add, edit, or delete tasks (depending on implementation).
+Add Tasks: Add tasks to your to-do list.
+View Tasks: See a list of all the tasks you’ve added.
+Delete Tasks: Remove tasks when they’re no longer needed.
+Responsive Design: The application is designed to be mobile-friendly.
+
 
 Tech Stack
+Frontend: React.js
+Backend: Node.js with Express
+Database: MongoDB (for storing tasks)
 
-Frontend:
-	•	React.js: For building the user interface.
-	•	CSS: For styling the frontend components.
-
-Backend:
-	•	Node.js: For building the backend server.
-	•	Express.js: A web framework for Node.js to handle HTTP requests.
-	•	MongoDB: A NoSQL database for storing tasks.
-	•	Mongoose: For MongoDB object modeling.
 
 Installation
 
-Prerequisites:
-	•	Node.js
-	•	MongoDB (or use a cloud service like MongoDB Atlas)
 
-Step 1: Clone the Repository
+To run this project locally, follow these steps:
 
-Clone the repository to your local machine.
+1. Clone the Repository
 
-git clone https://github.com/yourusername/Todo-List.git
-
-Step 2: Set Up the Backend
-	1.	Navigate to the backend folder:
-
-cd TodoList/NodeJs
+git clone https://github.com/bhanuarya06/Todo-List.git
 
 
-	2.	Install dependencies:
+2. Install Dependencies for the Backend
 
+Navigate to the NodeJs folder and install the required dependencies:
+
+cd NodeJs
 npm install
 
 
-	3.	Create a .env file and add the necessary environment variables (e.g., MongoDB URI):
+3. Install Dependencies for the Frontend
 
-MONGODB_URI=mongodb://localhost:27017/todolist
+Navigate to the ReactJs folder and install the required dependencies:
 
-
-	4.	Run the server:
-
-npm start
-
-
-
-Step 3: Set Up the Frontend
-	1.	Navigate to the frontend folder:
-
-cd TodoList/ReactJs
-
-
-	2.	Install dependencies:
-
+cd ../ReactJs
 npm install
 
+4. Run the Backend
 
-	3.	Run the React development server:
+In the NodeJs folder, run the server:
 
+cd ../NodeJs
 npm start
 
 
+5. Run the Frontend
 
-Step 4: Open the Application
-	•	Open your browser and navigate to http://localhost:3000 to see the app running.
+In the ReactJs folder, run the frontend development server:
+
+cd ../ReactJs
+npm start
+
+
+6. Open the Application
+
+Open your browser and visit http://localhost:3000 to see the Todo List application in action.
 
 Usage
-	1.	Adding Tasks: Use the input field to add new tasks to the list.
-	2.	View Tasks: The tasks will be displayed in a list format on the main page.
-	3.	Manage Tasks: (Add any additional functionality you’ve implemented here.)
-
-Future Improvements
-	•	Add user authentication (e.g., JWT or OAuth).
-	•	Implement task editing and deletion features.
-	•	Deploy the application using a service like Heroku, Netlify, or AWS.
-
-Contributing
-	1.	Fork the repository.
-	2.	Create a new branch (git checkout -b feature-name).
-	3.	Commit your changes (git commit -am 'Add new feature').
-	4.	Push to the branch (git push origin feature-name).
-	5.	Create a new Pull Request.
+    1.	Add tasks to your list.
+    2.	View all tasks.
+    3.	Delete tasks when you’re done with them.
 
 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Customizing the README:
-	•	Add instructions: Modify the instructions according to your setup or additional functionality.
-	•	Tech Stack: Adjust the tech stack if you’re using other libraries or technologies.
-	•	Features: Update the feature list with any new functionality you add to the project.
-	•	License: If you’re using a different license, update it accordingly.
-
-This template should give you a solid starting point. Let me know if you need further adjustments!
+Contact
+Author: Bhanu Prakash Vodinepally
+GitHub: bhanuarya06
