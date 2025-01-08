@@ -1,0 +1,23 @@
+# Node.js
+/node_modules/
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+/dist/
+/build/
+/*.env
+
+# React
+/build
+/.cache
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
