@@ -1,4 +1,3 @@
-const { type } = require('express/lib/response');
 var Mongoose = require('mongoose');
 const Schema = Mongoose.Schema;
 const Task = new Schema({
