@@ -71,6 +71,20 @@ main.post("/login", async (req,res)=>{
     }
 });
 
+main.delete("/delete/:id", async (req,res)=>{
+    try{
+        let deldata = await Task.deleteOne({_id:req.params.id});
+        if (deldata.deletedCount==0){
+            res.status(404).send({message:"No data was deleted", result:deldata});
+        }
+        else{
+            res.status(200).send({message:"Data sucessfully deleted", result:deldata});
+        }
+    }catch(error){
+        console.error(error);
+    }
+});
+
 
 // Global Error Handling Middleware
 main.use((err, req, res, next) => {

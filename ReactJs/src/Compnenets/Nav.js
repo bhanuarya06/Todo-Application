@@ -1,20 +1,27 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-function Nav(){
+function Nav() {
     const auth = localStorage.getItem("user");
     const navigate = useNavigate();
-    const logout = ()=>{
+    const logout = () => {
         localStorage.clear();
         navigate("/");
     }
     return (
         <div>
-            <ul>
-                <li> <Link to="/home">Home</Link></li>
-                <li> {auth? <Link to="/" onClick={logout}>Logout</Link>: <Link to="/">Login</Link>}</li>
-            </ul>
+            {auth ?
+                <ul>
+                    <li> <Link to="/home">Home</Link></li>
+                    <li> <Link to="/" onClick={logout}>Logout  ({JSON.parse(localStorage.getItem("user")).username})</Link></li>
+                </ul>
+
+                :
+                <ul>
+                    <li> <Link to="/" >Login</Link></li>
+                </ul>
+            }
         </div>
     );
 }
